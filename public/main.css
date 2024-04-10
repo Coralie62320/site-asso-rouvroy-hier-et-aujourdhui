@@ -1,0 +1,613 @@
+/* Formulaire S'enregistrer (Register) */
+.formulaire-register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+label.required {
+  margin: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+input#registration_form_email {
+  margin-left: 2rem;
+}
+
+.btn-register {
+  background-color: #e1261c;
+  opacity: 0.75;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+/* Page accueil */
+/* Section Accueil */
+.section-accueil {
+  background-color: #e1261c;
+  opacity: 0.75;
+  height: 100px;
+  margin-top: 80px;
+}
+
+.section-accueil > .titre-page-accueil {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+/* Slide Accueil */
+.slide {
+  max-width: 800px;
+  max-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-item img {
+  /* max-width: 50rem; */
+  max-width: 600px;
+  max-height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: lightgray;
+}
+
+/* Section Présentation association */
+.association {
+  margin-top: 3rem;
+}
+
+.association h2 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 1.5rem;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tabulation {
+  margin-left: 1.5rem;
+}
+
+.paragraphe-1-association {
+  margin-top: 0.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.paragraphe-2-association {
+  margin-top: 0.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.presentation-association {
+  font-style: italic;
+}
+
+.paragraphe-1-association,
+.paragraphe-2-association {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.premiere-ligne-p-association {
+  text-align: center;
+}
+
+/* Section Status association */
+.status {
+  margin-top: 3rem;
+  background-color: #1e874a;
+  opacity: 0.76;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.status p {
+  text-align: justify;
+}
+
+.status h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 1.5rem;
+}
+
+.status p {
+  color: white;
+  font-weight: bold;
+  margin-top: 0.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  line-height: 2rem;
+}
+
+.lien-status {
+  text-decoration: none;
+  background-color: #e1261c;
+  border: #e1261c;
+  color: white;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  padding: 0.5rem;
+  display: block;
+  text-align: center;
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+/* Section Événements */
+.evenement {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.evenement h2 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 1.5rem;
+}
+
+.evenement iframe {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Medias queries page Accueil */
+@media screen and (max-width: 768px) {
+  .section-accueil > .titre-page-accueil {
+    font-size: 20px;
+  }
+
+  .logo-footer {
+    height: 80px;
+  }
+
+  .donnees h6 {
+    font-size: 12px;
+  }
+
+  .donnees p {
+    font-size: 12px;
+  }
+
+  .navbar-nav-footer > .nav-item-footer > .nav-link-footer {
+    font-size: 12px;
+  }
+
+  .mentions {
+    margin-left: 16rem;
+  }
+
+  .mentions a {
+    font-size: 12px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-accueil > .titre-page-accueil {
+    font-size: 13px;
+    padding-top: 2.5rem;
+  }
+
+  .association h2 {
+    font-size: 20px;
+  }
+
+  .paragraphe-1-association {
+    font-size: 14px;
+  }
+
+  .paragraphe-2-association {
+    font-size: 14px;
+  }
+
+  .status h2 {
+    font-size: 20px;
+  }
+
+  .status p {
+    font-size: 14px;
+  }
+
+  .lien-status {
+    font-size: 12px;
+    width: 25%;
+  }
+
+  .evenement h2 {
+    font-size: 20px;
+  }
+
+  .donnees {
+    flex-direction: column;
+    height: 36rem;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-footer {
+    height: 80px;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .donnees h6 {
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+  }
+
+  .donnees p {
+    font-size: 12px;
+  }
+
+  .coordonnees {
+    margin-left: 4rem;
+  }
+
+  .menuFooter {
+    margin-top: 2rem;
+  }
+
+  .reseaux-sociaux {
+    margin-top: 2rem;
+    margin-right: 1.5rem;
+  }
+
+  .mentions {
+    justify-content: start;
+    margin-left: 11rem;
+    margin-top: 2rem;
+  }
+}
+
+/* Page Le patrimoine local */
+/* Présentation page patrimoine local */
+.section-titre-page {
+  background-color: #e1261c;
+  opacity: 0.75;
+  height: 100px;
+  margin-top: 80px;
+}
+
+.section-titre-page > .titre-page {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.presentation-patrimoine-local {
+  height: 20rem;
+  border: solid 1px black;
+}
+
+.presentation-patrimoine-local p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+/* Section image + texte page Patrimoine local */
+.liens-patrimoine-local {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.card-patrimoine-local {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.card-patrimoine-local img {
+  width: 288px;
+  height: 384px;
+}
+
+.card-body-patrimoine-civil {
+  background-color: #1e874a;
+  opacity: 0.75;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 288px;
+  height: 384px;
+  margin-right: 2rem;
+}
+
+.card-title-patrimoine-local {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration-line: none;
+}
+
+.card-body-patrimoine-religieux {
+  background-color: #1e874a;
+  opacity: 0.75;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 288px;
+  height: 384px;
+  margin-left: 2rem;
+}
+
+.card-body-patrimoine-monuments {
+  background-color: #1e874a;
+  opacity: 0.75;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 288px;
+  height: 384px;
+  margin-right: 2rem;
+}
+
+.card-body-patrimoine-disparus {
+  background-color: #1e874a;
+  opacity: 0.75;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 288px;
+  height: 384px;
+  margin-left: 2rem;
+}
+
+.reveal {
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.reveal-2 {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal-2.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Medias queries page Le patrimoine local */
+@media screen and (max-width: 576px) {
+  .card-patrimoine-local {
+    flex-direction: column;
+  }
+
+  .card-body-patrimoine-civil {
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+
+  .card-body-patrimoine-religieux {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+
+  .card-body-patrimoine-monuments {
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+
+  .card-body-patrimoine-disparus {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+}
+
+/* Page Découvrir Rouvroy -> Le patrimoine local -> Le patrimoine religieux */
+
+.sous-titre-page {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+
+.patrimoine-religieux h2 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Page Contacts */
+.coordonnes-contacts {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.logo-contacts {
+  height: 150px;
+}
+
+.adresse {
+  margin-right: 2rem;
+  animation: translateLeft 2s ease-in;
+}
+
+.adresse h6 {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.adresse p {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.iframe-contacts {
+  margin-left: 2rem;
+  animation: translateRight 2s ease-in;
+}
+
+@keyframes translateLeft {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes translateRight {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Medias queries page Contacts */
+@media screen and (max-width: 768px) {
+  .logo-contacts {
+    height: 100px;
+  }
+
+  .adresse {
+    margin-right: 1rem;
+  }
+
+  .adresse h6 {
+    font-size: 16px;
+  }
+
+  .adresse p {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+  }
+
+  .iframe-contacts iframe {
+    width: 350px;
+    height: 350px;
+  }
+
+  .iframe-contacts {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .coordonnes-contacts {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-contacts {
+    height: 160px;
+  }
+
+  .adresse {
+    margin-right: 0;
+  }
+
+  .adresse h6 {
+    font-size: 16px;
+  }
+
+  .adresse p {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+  }
+
+  .iframe-contacts iframe {
+    width: 420px;
+    height: 220px;
+  }
+
+  .iframe-contacts {
+    /* margin-right: 1rem; */
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+}

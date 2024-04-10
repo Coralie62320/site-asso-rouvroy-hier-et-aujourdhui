@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Rourvroy d'hier et d'aujourd'hui | Accueil{% endblock %}
+
+{% block body %}
+    {# Bloc titre accueil #}
+    <section>
+        <div class="section-accueil">
+            <h1 class="titre-page-accueil">Bienvenue sur le site de l'association Rouvroy d'hier et d'aujourd'hui</h1>
+        </div> 
+    </section>  
+        
+    {# Bloc Slide #}
+    <section class="slider">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/carousel_accueil/Photo_DANNE_Valentin_Patrimoine_civil.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/carousel_accueil/Photo_DANNE_Valentin_Patrimoine_religieux.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/carousel_accueil/Photo_DANNE_Valentin_Monument_aux_morts.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/carousel_accueil/Photo_DANNE_Valentin_Patrimoine_disparu.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    {# Bloc Présentation association #}
+    <section class="association">
+        <h2>L'association</h2>
+        <p class="paragraphe-1-association premiere-ligne-p-association">Bienvenue sur le site officiel de l'association « <span class="presentation-association">Rouvroy d'hier et d'aujourd'hui</span> ».</p>
+
+        <p class="paragraphe-2-association"><span class="tabulation">Ici</span>, vous pourrez en apprendre plus sur toute la richesse du Patrimoine rouvroysien. Qu'il soit architectural, social, culturel ou bien même folklorique, Rouvroy d'hier et d'aujourd'hui vous partage l'étendue de tout ce qu'il vous est possible de découvrir sur l'Histoire de la commune de Rouvroy à travers des articles, expositions, et bien d'autres encore.</p>
+
+        <p class="paragraphe-2-association"><span class="tabulation">Le</span> fond d'archives de l'association, que vous pouvez retrouver sur ce site, vous permet de vous plonger au coeur même de l'Histoire de la ville à toutes les époques, et cela grâce aux nombreux documents qui y sont numérisés. Des cartes postales aux articles de presse, en passant par de nombreux témoignages récoltés auprès de la population, vivez le Rouvroy d'hier et d'aujourd'hui comme vous ne l'avez jamais vécu.</p>
+
+        <p class="paragraphe-1-association"><span class="presentation-association"><span class="tabulation">Vous</span> êtes détenteur d'un morceau d'Histoire de Rouvroy et vous souhaitez le transmettre à l'association sous la forme d'un don ou d'un prêt ? N'hésitez pas à contacter l'association dans la rubrique Contacts, et nous serons ravis d'en parler avec vous !</span></p>
+    </section>
+    
+    {# Bloc Les status #}
+    <section class="status">
+      <h2>Status</h2>
+
+      <p><span class="tabulation">L'association</span> a pour objet de permettre et favoriser la recherche, l'étude et la conservation du patrimoine historique, architectural, social, culturel et folklorique de la commune de Rouvroy et de ses environs, d'en faire la promotion, de le diffuser, de le partager et d'ensauvegarder la mémoire, passée et actuelle, par tous les moyens dont pourra disposer l'association.</p>
+
+      <a class="lien-status" href="#" target="_blank">Télécharger les status</a>
+    </section>
+
+    {# Bloc Evenements #}
+    <section class="evenement">
+      <h2>Événements</h2>
+
+      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fvillerouvroy%2F%3Flocale%3Dfr_FR&tabs=timeline&width=400&height=900&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="400" height="900" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </section>
+{% endblock %}

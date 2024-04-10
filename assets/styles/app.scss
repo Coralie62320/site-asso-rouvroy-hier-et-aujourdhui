@@ -1,0 +1,199 @@
+@import "~bootstrap/scss/bootstrap";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    background-color: white;
+}
+
+// Header
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    background-color: #1E874A;
+}
+
+#logo {
+    height: 50px;
+}
+
+.navbar-nav {
+    padding-right: 3rem;
+}
+
+.navbar-nav > .nav-item > .nav-link {
+    color: white;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.nav-link {
+    margin-left: 4rem;
+}
+
+.navbar-nav > .nav-item > .nav-link:active {
+    background-color: #E1261C;
+    opacity: 0.75;
+}
+
+.navbar-nav > .nav-item > .nav-link:hover {
+    background-color: #E1261C;
+    opacity: 0.75;
+}
+
+ul.dropdown-menu.show {
+    margin-left: 4rem;
+}
+
+a.dropdown-item {
+    color: #1E874A;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+a.dropdown-item:active {
+    background-color: #E1261C;
+    opacity: 0.75;
+    color: white;
+}
+
+a.dropdown-item:hover {
+    background-color: #E1261C;
+    opacity: 0.75;
+    color: white;
+}
+
+
+// Footer
+footer {
+    background-color: #1E874A;
+}
+
+.navbar-nav-footer > .nav-item-footer > .nav-link-footer {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration-line: none;
+    line-height: 1.5rem;
+}
+
+.navbar-nav-footer > .nav-item-footer > .nav-link-footer:active {
+    background-color: #E1261C;
+    opacity: 0.75;
+}
+
+.navbar-nav-footer > .nav-item-footer > .nav-link-footer:hover {
+    background-color: #E1261C;
+    opacity: 0.75;
+}
+
+.logo-footer {
+    height: 100px;
+}
+
+.donnees {
+    display: flex;
+    flex-direction: wrap;
+    height: 12rem;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.donnees h6 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+.donnees p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    line-height: 1.5rem;
+}
+
+.mentions {
+    display: flex;
+    justify-content: center;
+    margin-left: 25rem;
+}
+
+.mentions a {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    text-decoration-line: none;
+}
+
+.copyright-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+.copyright {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}

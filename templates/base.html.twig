@@ -4,14 +4,150 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+            <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
         {% endblock %}
 
         {% block javascripts %}
-            {% block importmap %}{{ importmap('app') }}{% endblock %}
+            {{ encore_entry_script_tags('app') }}
+            {# {% block importmap %}{{ importmap('app') }}{% endblock %} #}
+            <script src="../index.js" type="text/javascript" defer></script>
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {# Début du header #}
+      {% block header %}
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="{{ asset('images/logo_ville_rouvroy.png') }}" alt="Logo ville de Rouvroy" id="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              {# <span class="navbar-toggler-icon"></span> #}
+              <i class="fas fa-bars icone-menu-burger-accueil" style="color: white;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Découvrir Rouvroy
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Son histoire</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/patrimoine-local">Le patrimoine local</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Personnages</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Projets
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Monographie de Rouvroy</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Célestine, géante de Rouvroy</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Entretiens</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Archives</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Galeries</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contacts">Contacts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    {% endblock %}
+    {# Fin du header #}
+
+    {# Début du contenu de la page #}
+    <main>
+      {% block body %}{% endblock %}
+    </main>
+    {# Fin du contenu de la page #}
+
+    {# Début du footer #}
+    {% block footer %}
+      <footer>
+        <div class="donnees">
+          <div>
+            <img src="images/logo_ville_rouvroy.png" alt="Logo footer ville de Rouvroy" class="logo-footer">
+          </div>
+          <div class="coordonnees">
+            <h6>Nos coordonnées:</h6>
+            <p>Association Rouvroy d'hier et d'aujourd'hui</p>
+            <p>5, rue de la Mairie</p>
+            <p>62320 Rouvroy</p>
+            <p>Mail: rouvroyhistoire@gmail.com</p>
+          </div>
+          <div class="menuFooter">
+            <ul class="navbar-nav-footer me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+              <li class="nav-item-footer">
+                <a class="nav-link-footer active" aria-current="page" href="/">Accueil</a>
+              </li>
+              <li class="nav-item-footer dropdown">
+                <a class="nav-link-footer dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Découvrir Rouvroy
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Son histoire</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="/patrimoine-local">Le patrimoine local</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Personnages</a></li>
+                </ul>
+              </li>
+              <li class="nav-item-footer dropdown">
+                <a class="nav-link-footer dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projets
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Monographie de Rouvroy</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Célestine, géante de Rouvroy</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Entretiens</a></li>
+                </ul>
+              </li>
+              <li class="nav-item-footer">
+                <a class="nav-link-footer" href="#">Archives</a>
+              </li>
+              <li class="nav-item-footer">
+                <a class="nav-link-footer" href="#">Galeries</a>
+              </li>
+              <li class="nav-item-footer">
+                <a class="nav-link-footer" href="/contacts">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="reseaux-sociaux">
+            <h6>Réseaux sociaux:</h6>
+            <a href="#" target="_blank"><img src="images/icons8-facebook.svg" alt="Facebook" title="Facebook"></a>
+          </div>
+        </div>
+        <div class="mentions">
+          <a href="#">Mentions légales</a>
+        </div>
+        <div class="copyright-footer">
+          <span class="copyright">&#169;
+            {{ 'now' |date('Y') }} Association Rouvroy d'hier et d'aujourd'hui. Tous droits réservés.
+          </span>
+        </div>
+      </footer>
+    {% endblock %}
+    {# Fin du footer #}
     </body>
 </html>

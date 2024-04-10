@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Rourvroy d'hier et d'aujourd'hui | Le patrimoine local{% endblock %}
+
+{% block body %}
+    {# Bloc titre Page Le patrimoine local #}
+    <section>
+        <div class="section-titre-page">
+            <h2 class="titre-page">Le patrimoine local</h2>
+        </div> 
+    </section>  
+
+    <section class="presentation-patrimoine-local">
+        <p>Présentation de la section patrimoine local</p>
+    </section>
+
+    <section class="liens-patrimoine-local">
+        <div class="card-patrimoine-local reveal">
+            <div class="card-body-patrimoine-civil">
+                <a href="#" class="card-title-patrimoine-local">Le patrimoine civil</a>
+            </div>
+            <img src="images/Photo-DANNE-Valentin-Patrimoine-civil.jpg" alt="">
+        </div>
+
+        <div class="card-patrimoine-local reveal-2">
+            <img src="images/Photo-DANNE-Valentin-Patrimoine-religieux.jpg" alt="">
+            <div class="card-body-patrimoine-religieux">
+                <a href="/patrimoine-religieux" class="card-title-patrimoine-local">Le patrimoine religieux</a>
+            </div>
+        </div>
+
+        <div class="card-patrimoine-local reveal">
+            <div class="card-body-patrimoine-monuments">
+                <a href="#" class="card-title-patrimoine-local">Les monuments</a>
+            </div>
+            <img src="images/Photo-DANNE-Valentin-Monument-aux-morts.jpg" alt="">
+        </div>
+
+        <div class="card-patrimoine-local reveal-2">
+            <img src="images/Photo-DANNE-Valentin-Patrimoine-disparu.jpg" alt="">
+            <div class="card-body-patrimoine-disparus">
+                <a href="#" class="card-title-patrimoine-local">Le patrimoine disparus</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
