@@ -328,7 +328,7 @@ input#registration_form_email {
   font-size: 26px;
   display: flex;
   justify-content: center;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .presentation-patrimoine-local {
@@ -490,6 +490,42 @@ input#registration_form_email {
   justify-content: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.article-patrimoine-religieux {
+  display: flex;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 4rem;
+  background-color: #f5f5f5;
+}
+
+.img-religieux {
+  width: 100px;
+}
+
+.image-patrimoine-religieux {
+  width: 30%;
+}
+
+.texte-patrimoine-religieux {
+  width: 70%;
+}
+
+.texte-patrimoine-religieux h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.texte-patrimoine-religieux p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin-left: 0.5rem;
 }
 
 /* Page Contacts */

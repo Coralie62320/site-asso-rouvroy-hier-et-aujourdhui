@@ -20,7 +20,6 @@ class PatrimoineReligieuxController extends AbstractController
     public function index(PatrimoineReligieuxRepository $repository): Response
     {
         $patrimoineReligieux = $repository->findAll();
-
         return $this->render('patrimoine_religieux/index.html.twig', [
             'PatrimoineReligieux' => $patrimoineReligieux,
         ]);
