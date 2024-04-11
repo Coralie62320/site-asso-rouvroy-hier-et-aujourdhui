@@ -374,12 +374,26 @@ input#registration_form_email {
   margin-right: 2rem;
 }
 
-.card-title-patrimoine-local {
+.card-body-patrimoine-civil h3 {
   font-family: "Poppins", sans-serif;
   color: white;
   font-weight: bold;
   font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.card-title-patrimoine-local {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
   text-decoration-line: none;
+  background-color: #e1261c;
+  padding: 0.5rem;
+}
+
+.card-body-patrimoine-civil > .card-title-patrimoine-local {
+  margin-left: 1rem;
 }
 
 .card-body-patrimoine-religieux {
@@ -394,6 +408,14 @@ input#registration_form_email {
   margin-left: 2rem;
 }
 
+.card-body-patrimoine-religieux h3 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
 .card-body-patrimoine-monuments {
   background-color: #1e874a;
   opacity: 0.75;
@@ -406,6 +428,18 @@ input#registration_form_email {
   margin-right: 2rem;
 }
 
+.card-body-patrimoine-monuments h3 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.card-body-patrimoine-monuments > .card-title-patrimoine-local {
+  margin-left: 1.7rem;
+}
+
 .card-body-patrimoine-disparus {
   background-color: #1e874a;
   opacity: 0.75;
@@ -416,6 +450,14 @@ input#registration_form_email {
   width: 288px;
   height: 384px;
   margin-left: 2rem;
+}
+
+.card-body-patrimoine-disparus h3 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 1rem;
 }
 
 .reveal {

@@ -37,7 +37,7 @@ class DashboardController extends AbstractDashboardController
     {
         return Dashboard::new()
             // ->setTitle("Association Rouvroy d'hier et d'aujourd'hui");
-            ->setTitle("<img src='images/logo_ville_rouvroy.png' class='img-fluid d-block mx-auto' style='max-width:100px; width:100%;'><h6 class='mt-3 fw-bold text-black text-center'>Association Rouvroy d'hier et d'aujourd'hui</h6>");
+            ->setTitle("<img src='images/logo_rond_asso.png' class='img-fluid d-block mx-auto' style='max-width:100px; width:100%;'><h6 class='mt-3 fw-bold text-black text-center'>Association Rouvroy d'hier et d'aujourd'hui</h6>");
     }
 
     public function configureMenuItems(): iterable
