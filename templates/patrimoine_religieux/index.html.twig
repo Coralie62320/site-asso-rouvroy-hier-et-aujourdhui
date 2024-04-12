@@ -21,9 +21,10 @@
         </div>
         <div class="texte-patrimoine-religieux">
             <h3>{{ PatrimoineReligieux.titre }}</h3>
-            <p>{{ PatrimoineReligieux.contenu }}</p>
+            <p>{{ PatrimoineReligieux.contenu | raw }}</p>
         </div>
     {% endfor %}
     </div>
 </section> 
 {% endblock %}
+
