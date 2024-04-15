@@ -24,7 +24,7 @@ class PatrimoineReligieuxCrudController extends AbstractCrudController
     public function configureFields(string $pageName): iterable
     {
         return [
-            yield IdField::new('id'),
+            yield IdField::new('id')->hideOnForm(),
             yield TextField::new('titre'),
             yield SlugField::new('slug')->setTargetFieldName('titre')->hideOnIndex(),
             yield TextEditorField::new('contenu'),
