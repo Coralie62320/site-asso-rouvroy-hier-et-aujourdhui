@@ -24,14 +24,14 @@ class PatrimoineReligieuxCrudController extends AbstractCrudController
     public function configureFields(string $pageName): iterable
     {
         return [
-            // IdField::new('id'),
-            TextField::new('titre'),
-            SlugField::new('slug')->setTargetFieldName('titre')->hideOnIndex(),
-            TextEditorField::new('contenu'),
-            // TextField::new('imageFile')->setFormType(VichImageType::class),
-            ImageField::new('image')->setBasePath('/uploads/articles')->setUploadDir('/public/uploads/articles'),
-            DateTimeField::new('createdAt'),
-            DateTimeField::new('updatedAt'),
+            yield IdField::new('id'),
+            yield TextField::new('titre'),
+            yield SlugField::new('slug')->setTargetFieldName('titre')->hideOnIndex(),
+            yield TextEditorField::new('contenu'),
+            // yield TextField::new('imageFile')->setFormType(VichImageType::class),
+            yield ImageField::new('image')->setBasePath('/uploads/articles')->setUploadDir('/public/uploads/articles'),
+            yield DateTimeField::new('createdAt'),
+            yield DateTimeField::new('updatedAt'),
         ];
     }
 }

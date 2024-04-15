@@ -14,8 +14,9 @@
 <section class="patrimoine-religieux">
     <h2>Le patrimoine religieux</h2> 
 
-    <div class="article-patrimoine-religieux">
+    
     {% for PatrimoineReligieux in PatrimoineReligieux %}
+    <div class="article-patrimoine-religieux">
         <div class="image-patrimoine-religieux">
             <img src="uploads/articles/{{PatrimoineReligieux.image}}" alt="" class="img-religieux">
         </div>
@@ -23,8 +24,9 @@
             <h3>{{ PatrimoineReligieux.titre }}</h3>
             <p>{{ PatrimoineReligieux.contenu | raw }}</p>
         </div>
-    {% endfor %}
     </div>
+    {% endfor %}
+    
 </section> 
 {% endblock %}
 
