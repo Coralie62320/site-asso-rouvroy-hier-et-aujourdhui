@@ -15,7 +15,7 @@
     <h2>Le patrimoine religieux</h2> 
 
     
-    {% for PatrimoineReligieux in PatrimoineReligieux %}
+    {% for PatrimoineReligieux in PatrimoineReligieux | sort((a, b) => a.id <=> b.id)%}
     <div class="article-patrimoine-religieux">
         <div class="image-patrimoine-religieux">
             <img src="uploads/articles/{{PatrimoineReligieux.image}}" alt="" class="img-religieux">
