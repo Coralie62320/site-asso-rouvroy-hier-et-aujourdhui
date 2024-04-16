@@ -130,6 +130,10 @@ input#registration_form_email {
   opacity: 0.76;
   padding-top: 3rem;
   padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .status p {
@@ -160,7 +164,7 @@ input#registration_form_email {
   line-height: 2rem;
 }
 
-.lien-status {
+/* .btn-status {
   text-decoration: none;
   background-color: #e1261c;
   border: #e1261c;
@@ -174,6 +178,52 @@ input#registration_form_email {
   width: 20%;
   margin: 0 auto;
   margin-top: 1.5rem;
+} */
+
+.lien-telechargement-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e874a;
+  color: white;
+  padding-top: 1rem;
+}
+
+.btn-changement-couleur {
+  background-color: #e1261c;
+  padding: 20px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-changement-couleur .span-changement-couleur {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-changement-couleur::before {
+  content: "";
+  position: absolute;
+  background-color: #1e874a;
+  width: 0;
+  height: 0;
+  left: var(--xPos);
+  top: var(--yPos);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: width 0.5s, height 0.5s;
+}
+
+.btn-changement-couleur:hover::before {
+  width: 300px;
+  height: 300px;
 }
 
 /* Section Événements */

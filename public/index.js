@@ -1,3 +1,14 @@
+// Animation changement couleur au survol boutons
+// const btnEl = document.querySelector(".btn-changement-couleur");
+
+// btnEl.addEventListener("mouseover", (event) => {
+//   const x = (event.pageX - btnEl.offsetLeft);
+//   const y = (event.pageY - btnEl.offsetTop);
+
+//   btnEl.style.setProperty("--xPos", x + "px");
+//   btnEl.style.setProperty("--yPos", y + "px");
+// });
+
 // Page formation div translate left
 function reveal() {
     let reveals = document.querySelectorAll(".reveal");

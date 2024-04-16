@@ -8,7 +8,8 @@
         <div class="section-accueil">
             <h1 class="titre-page-accueil">Bienvenue sur le site de l'association Rouvroy d'hier et d'aujourd'hui</h1>
         </div> 
-    </section>  
+    </section>
+    {# Fin Bloc titre accueil #}  
         
     {# Bloc Slide #}
     <section class="slider">
@@ -37,6 +38,7 @@
             </button>
           </div>
     </section>
+    {# Fin Bloc Slide #}
 
     {# Bloc Présentation association #}
     <section class="association">
@@ -49,6 +51,7 @@
 
         <p class="paragraphe-1-association"><span class="presentation-association"><span class="tabulation">Vous</span> êtes détenteur d'un morceau d'Histoire de Rouvroy et vous souhaitez le transmettre à l'association sous la forme d'un don ou d'un prêt ? N'hésitez pas à contacter l'association dans la rubrique Contacts, et nous serons ravis d'en parler avec vous !</span></p>
     </section>
+    {# Fin Bloc Présentation association #}
     
     {# Bloc Les status #}
     <section class="status">
@@ -56,8 +59,12 @@
 
       <p><span class="tabulation">L'association</span> a pour objet de permettre et favoriser la recherche, l'étude et la conservation du patrimoine historique, architectural, social, culturel et folklorique de la commune de Rouvroy et de ses environs, d'en faire la promotion, de le diffuser, de le partager et d'ensauvegarder la mémoire, passée et actuelle, par tous les moyens dont pourra disposer l'association.</p>
 
-      <a class="lien-status" href="#" target="_blank">Télécharger les status</a>
+      <div class="lien-telechargement-status">
+        {# <a class="lien-status" href="#" target="_blank">Télécharger les status</a> #}
+        <a class="btn-changement-couleur" href="#"><span class="span-changement-couleur">Télécharger</span></a>
+      </div>
     </section>
+    {# Fin Bloc Les status #}
 
     {# Bloc Evenements #}
     <section class="evenement">
@@ -65,4 +72,5 @@
 
       <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F61556610688836&tabs=timeline&width=400&height=900&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="400" height="900" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
     </section>
+    {# Fin Bloc Evenements #}
 {% endblock %}
