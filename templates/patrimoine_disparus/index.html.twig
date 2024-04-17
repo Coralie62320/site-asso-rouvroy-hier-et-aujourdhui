@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PatrimoineDisparusController!{% endblock %}
+
+{% block body %}
+{# Bloc titre Page Le patrimoine disparus #}
+<section>
+    <div class="section-titre-page">
+        <h2 class="titre-page">Découvrir Rouvroy</h2>
+        <h3 class="sous-titre-page">Le patrimoine local / Le patrimoine disparus</h3>
+    </div> 
+</section>  
+
+<section class="patrimoine-disparus">
+    <h2>Le patrimoine disparus</h2> 
+
+    
+    {% for PatrimoineDisparus in PatrimoineDisparus | sort((a, b) => a.id <=> b.id)%}
+    <div class="article-patrimoine-disparus">
+        <div class="image-patrimoine-disparus">
+            <img src="uploads/articles/{{PatrimoineDisparus.image}}" alt="" class="img-disparus">
+        </div>
+        <div class="texte-patrimoine-disparus">
+            <h3>{{ PatrimoineDisparus.titre }}</h3>
+            <p>{{ PatrimoineDisparus.contenu | raw }}</p>
+        </div>
+    </div>
+    {% endfor %}
+    
+</section>
+{% endblock %}
