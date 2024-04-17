@@ -47,6 +47,8 @@ class DashboardController extends AbstractDashboardController
     {
         yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
         // yield MenuItem::linkToCrud('The Label', 'fas fa-list', EntityClass::class);
+
+        yield MenuItem::section('Patrimoine Local');
         yield MenuItem::linkToCrud('Patrimoine civil', 'fa-solid fa-landmark', PatrimoineCivil::class);
         yield MenuItem::linkToCrud('Patrimoine religieux', 'fa-solid fa-church', PatrimoineReligieux::class);
         yield MenuItem::linkToCrud('Patrimoine Les monuments', 'fa-solid fa-monument', PatrimoineMonuments::class);
