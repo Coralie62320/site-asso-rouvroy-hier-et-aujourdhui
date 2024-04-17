@@ -561,6 +561,63 @@ input#registration_form_email {
   }
 }
 
+/* Page Découvrir Rouvroy -> Le patrimoine local -> Le patrimoine civil */
+
+.sous-titre-page {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+
+.article-patrimoine-civil {
+  display: flex;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 4rem;
+  background-color: #f5f5f5;
+  padding: 1rem;
+}
+
+.patrimoine-civil h2 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.img-civil {
+  width: 200px;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+.texte-patrimoine-civil h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.texte-patrimoine-civil div {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding-right: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
 /* Page Découvrir Rouvroy -> Le patrimoine local -> Le patrimoine religieux */
 
 .sous-titre-page {
