@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\PatrimoineCivil;
+use App\Entity\PatrimoineMonuments;
 use App\Entity\PatrimoineReligieux;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
@@ -47,5 +48,6 @@ class DashboardController extends AbstractDashboardController
         // yield MenuItem::linkToCrud('The Label', 'fas fa-list', EntityClass::class);
         yield MenuItem::linkToCrud('Patrimoine civil', 'fa-solid fa-landmark', PatrimoineCivil::class);
         yield MenuItem::linkToCrud('Patrimoine religieux', 'fa-solid fa-church', PatrimoineReligieux::class);
+        yield MenuItem::linkToCrud('Patrimoine Les monuments', 'fa-solid fa-monument', PatrimoineMonuments::class);
     }
 }
