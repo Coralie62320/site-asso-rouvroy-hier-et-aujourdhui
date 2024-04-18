@@ -6,6 +6,7 @@ use App\Entity\PatrimoineCivil;
 use App\Entity\PatrimoineDisparus;
 use App\Entity\PatrimoineMonuments;
 use App\Entity\PatrimoineReligieux;
+use App\Entity\Personnages;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
@@ -53,5 +54,8 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Patrimoine religieux', 'fa-solid fa-church', PatrimoineReligieux::class);
         yield MenuItem::linkToCrud('Patrimoine Les monuments', 'fa-solid fa-monument', PatrimoineMonuments::class);
         yield MenuItem::linkToCrud('Patrimoine disparus', 'fa-solid fa-archway', PatrimoineDisparus::class);
+
+        yield MenuItem::section('Personnages');
+        yield MenuItem::linkToCrud('Personnages', 'fa-solid fa-user', Personnages::class);
     }
 }

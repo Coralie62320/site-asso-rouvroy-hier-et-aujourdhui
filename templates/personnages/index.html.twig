@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PersonnagesController!{% endblock %}
+
+{% block body %}
+{# Bloc titre Page Personnages #}
+<section>
+    <div class="section-titre-page">
+        <h2 class="titre-page">Découvrir Rouvroy</h2>
+        <h3 class="sous-titre-page">Les personnages</h3>
+    </div> 
+</section>  
+
+<section class="personnages">
+    <h2>Les personnages</h2>
+
+    <div class="div-personnages">
+        {% for Personnages in Personnages | sort((a, b) => a.id <=> b.id)%}
+        <div class="card-personnages" style="width: 18rem;">
+            <img src="uploads/articles/{{Personnages.image}}" class="card-img-top-personnages" alt="...">
+            <div class="card-body-personnages">
+            <h5 class="card-title-personnages">{{ Personnages.nom }}</h5>
+            <h6 class="card-subtitle-personnages mb-2 text-muted">{{ Personnages.dates }}</h6>
+            <p class="card-text-personnages">{{ Personnages.description | raw }}</p>
+            {# <a href="#" class="btn btn-primary">Go somewhere</a> #}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+{# <section class="patrimoine-religieux">
+    <h2>Le patrimoine religieux</h2> 
+
+    
+    {% for PatrimoineReligieux in PatrimoineReligieux | sort((a, b) => a.id <=> b.id)%}
+    <div class="article-patrimoine-religieux">
+        <div class="image-patrimoine-religieux">
+            <img src="uploads/articles/{{PatrimoineReligieux.image}}" alt="" class="img-religieux">
+        </div>
+        <div class="texte-patrimoine-religieux">
+            <h3>{{ PatrimoineReligieux.titre }}</h3>
+            <p>{{ PatrimoineReligieux.contenu | raw }}</p>
+        </div>
+    </div>
+    {% endfor %}
+    
+</section>  #}
+{% endblock %}
