@@ -211,7 +211,7 @@ input#registration_form_email {
 .btn-changement-couleur::before {
   content: "";
   position: absolute;
-  background-color: #1e874a;
+  background-color: rgba(224, 108, 102, 0.88);
   width: 0;
   height: 0;
   left: var(--xPos);
@@ -618,6 +618,16 @@ input#registration_form_email {
   text-align: justify;
 }
 
+@media screen and (max-width: 576px) {
+  .texte-patrimoine-civil h3 {
+    font-size: 16px;
+  }
+
+  .texte-patrimoine-civil div {
+    font-size: 12px;
+  }
+}
+
 /* Page Découvrir Rouvroy -> Le patrimoine local -> Le patrimoine religieux */
 
 .sous-titre-page {
@@ -673,6 +683,16 @@ input#registration_form_email {
   padding-right: 1rem;
   line-height: 1.5rem;
   text-align: justify;
+}
+
+@media screen and (max-width: 576px) {
+  .texte-patrimoine-religieux h3 {
+    font-size: 16px;
+  }
+
+  .texte-patrimoine-religieux div {
+    font-size: 12px;
+  }
 }
 
 /* Page Découvrir Rouvroy -> Le patrimoine local -> Les monuments */
@@ -732,6 +752,16 @@ input#registration_form_email {
   text-align: justify;
 }
 
+@media screen and (max-width: 576px) {
+  .texte-patrimoine-monuments h3 {
+    font-size: 16px;
+  }
+
+  .texte-patrimoine-monuments div {
+    font-size: 12px;
+  }
+}
+
 /* Page Découvrir Rouvroy -> Le patrimoine local -> Les patrimoine disparus */
 
 .sous-titre-page {
@@ -787,6 +817,16 @@ input#registration_form_email {
   padding-right: 1rem;
   line-height: 1.5rem;
   text-align: justify;
+}
+
+@media screen and (max-width: 576px) {
+  .texte-patrimoine-disparus h3 {
+    font-size: 16px;
+  }
+
+  .texte-patrimoine-disparus div {
+    font-size: 12px;
+  }
 }
 
 /* Page Contacts */
