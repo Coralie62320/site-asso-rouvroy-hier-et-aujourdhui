@@ -211,7 +211,7 @@ input#registration_form_email {
 .btn-changement-couleur::before {
   content: "";
   position: absolute;
-  background-color: rgba(224, 108, 102, 0.88);
+  background-color: rgba(224, 108, 102, 0.88); /* Couleur => #E06C66 */
   width: 0;
   height: 0;
   left: var(--xPos);
@@ -907,6 +907,21 @@ input#registration_form_email {
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+/* Medias queries page Personnages */
+@media screen and (max-width: 768px) {
+  .card-personnages {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-personnages {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
 }
 
 /* Page Contacts */

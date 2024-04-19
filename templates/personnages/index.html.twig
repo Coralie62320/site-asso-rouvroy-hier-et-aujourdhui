@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PersonnagesController!{% endblock %}
+{% block title %}Rourvroy d'hier et d'aujourd'hui | Les personnages{% endblock %}
 
 {% block body %}
 {# Bloc titre Page Personnages #}
@@ -9,8 +9,10 @@
         <h2 class="titre-page">Découvrir Rouvroy</h2>
         <h3 class="sous-titre-page">Les personnages</h3>
     </div> 
-</section>  
+</section> 
+{# Fin Bloc titre Page Personnages #} 
 
+{# Bloc section présentation des personnages Page Personnages #}
 <section class="personnages">
     <h2>Les personnages</h2>
 
@@ -28,22 +30,5 @@
         {% endfor %}
     </div>
 </section>
-
-{# <section class="patrimoine-religieux">
-    <h2>Le patrimoine religieux</h2> 
-
-    
-    {% for PatrimoineReligieux in PatrimoineReligieux | sort((a, b) => a.id <=> b.id)%}
-    <div class="article-patrimoine-religieux">
-        <div class="image-patrimoine-religieux">
-            <img src="uploads/articles/{{PatrimoineReligieux.image}}" alt="" class="img-religieux">
-        </div>
-        <div class="texte-patrimoine-religieux">
-            <h3>{{ PatrimoineReligieux.titre }}</h3>
-            <p>{{ PatrimoineReligieux.contenu | raw }}</p>
-        </div>
-    </div>
-    {% endfor %}
-    
-</section>  #}
+{# Fin Bloc section présentation des personnages Page Personnages #}
 {% endblock %}
