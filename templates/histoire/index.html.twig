@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Rourvroy d'hier et d'aujourd'hui | Découvrir Rouvroy | Son Histoire{% endblock %}
+
+{% block body %}
+{# Bloc titre Page Découvrir Rouvroy -> Son Histoire #}
+<section>
+    <div class="section-titre-page">
+        <h2 class="titre-page">Découvrir Rouvroy</h2>
+        <h3 class="sous-titre-page">Son Histoire</h3>
+    </div> 
+</section> 
+{# Fin Bloc titre Page Découvrir Rouvroy -> Son Histoire #}
+
+{# Bloc section Page Découvrir Rouvroy -> Son Histoire #}
+<section class="histoire">
+    <h2>L'Histoire de Rouvroy</h2> 
+
+    {% for Histoire in Histoire | sort((a, b) => a.id <=> b.id)%}
+    <div class="article-histoire-rouvroy">
+        <h3>{{ Histoire.titre }}</h3>
+        <div class="part-1">
+        <div class="image-histoire-rouvroy">
+            <img src="uploads/articles/{{Histoire.image}}" alt="" class="img-histoire-rouvroy">
+        </div>
+        <div class="texte-histoire-rouvroy">
+            <p>{{ Histoire.contenu | raw }}</p>
+        </div>
+        </div>
+
+        <div class="part-2">
+        <div class="texte2-histoire-rouvroy">
+            <p>{{ Histoire.contenu2 | raw }}</p>
+        </div>
+        <div class="image-histoire-rouvroy">
+            <img src="uploads/articles/{{Histoire.image2}}" alt="" class="img2-histoire-rouvroy">
+        </div>
+        </div>
+    </div>
+    {% endfor %}
+</section> 
+{# Fin Bloc section Page Découvrir Rouvroy -> Son Histoire #}
+{% endblock %}

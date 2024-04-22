@@ -362,6 +362,69 @@ input#registration_form_email {
   }
 }
 
+/* Page Découvrir Rouvroy -> Son Histoire */
+
+.sous-titre-page {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+
+.histoire h2 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.article-histoire-rouvroy {
+  background-color: #f5f5f5;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.histoire h3 {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  padding-top: 2rem;
+}
+
+.img-histoire-rouvroy,
+.img2-histoire-rouvroy {
+  height: 150px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.part-1,
+.part-2 {
+  display: flex;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.texte-histoire-rouvroy,
+.texte2-histoire-rouvroy {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: justify;
+}
+
 /* Page Le patrimoine local */
 /* Présentation page patrimoine local */
 .section-titre-page {

@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Archives;
+use App\Entity\Histoire;
 use App\Entity\PatrimoineCivil;
 use App\Entity\PatrimoineDisparus;
 use App\Entity\PatrimoineMonuments;
@@ -49,6 +50,9 @@ class DashboardController extends AbstractDashboardController
     {
         yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
         // yield MenuItem::linkToCrud('The Label', 'fas fa-list', EntityClass::class);
+
+        yield MenuItem::section('Histoire de Rouvroy');
+        yield MenuItem::linkToCrud('Histoire', 'fa-solid fa-landmark-dome', Histoire::class);
 
         yield MenuItem::section('Patrimoine Local');
         yield MenuItem::linkToCrud('Patrimoine civil', 'fa-solid fa-landmark', PatrimoineCivil::class);
