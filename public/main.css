@@ -402,6 +402,7 @@ input#registration_form_email {
   margin-bottom: 1rem;
   margin-left: 1rem;
   padding-top: 2rem;
+  text-decoration-line: underline;
 }
 
 .img-histoire-rouvroy,
