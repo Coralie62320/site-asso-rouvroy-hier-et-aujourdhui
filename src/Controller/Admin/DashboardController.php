@@ -2,6 +2,7 @@
 
 namespace App\Controller\Admin;
 
+use App\Entity\Archives;
 use App\Entity\PatrimoineCivil;
 use App\Entity\PatrimoineDisparus;
 use App\Entity\PatrimoineMonuments;
@@ -57,5 +58,8 @@ class DashboardController extends AbstractDashboardController
 
         yield MenuItem::section('Personnages');
         yield MenuItem::linkToCrud('Personnages', 'fa-solid fa-user', Personnages::class);
+
+        yield MenuItem::section('Archives');
+        yield MenuItem::linkToCrud('Archives', 'fa-solid fa-box-archive', Archives::class);
     }
 }
