@@ -762,7 +762,7 @@ input#registration_form_email {
   }
 }
 
-/* Page Découvrir Rouvroy -> Le patrimoine local -> Les patrimoine disparus */
+/* Page Découvrir Rouvroy -> Le patrimoine local -> Le patrimoine disparus */
 
 .sous-titre-page {
   color: white;
@@ -871,11 +871,11 @@ input#registration_form_email {
 }
 
 .card-img-top-personnages {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  /* width: 200px; */
   border-radius: 50%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .card-body-personnages {
@@ -923,6 +923,8 @@ input#registration_form_email {
     margin-right: 7rem;
   }
 }
+
+/* Page Archives */
 
 /* Page Contacts */
 .coordonnes-contacts {

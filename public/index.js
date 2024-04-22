@@ -43,3 +43,4 @@ function revealDeux() {
 };
 
 window.addEventListener("scroll", revealDeux);
+
