@@ -7,14 +7,14 @@
 <section>
     <div class="section-titre-page">
         <h2 class="titre-page">Découvrir Rouvroy</h2>
-        <h3 class="sous-titre-page">Le patrimoine local / Le patrimoine disparus</h3>
+        <h3 class="sous-titre-page">Le patrimoine local / Le patrimoine disparu</h3>
     </div> 
 </section> 
 {# Fin Bloc titre Page Le patrimoine disparus #} 
 
 {# Bloc section articles Page Le patrimoine disparus #}
 <section class="patrimoine-disparus">
-    <h2>Le patrimoine disparus</h2> 
+    <h2>Le patrimoine disparu</h2> 
 
     
     {% for PatrimoineDisparus in PatrimoineDisparus | sort((a, b) => a.id <=> b.id)%}

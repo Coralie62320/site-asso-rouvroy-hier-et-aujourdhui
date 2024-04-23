@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Rourvroy d'hier et d'aujourd'hui | Projets | Célestine, géante de Rouvroy{% endblock %}
+
+{% block body %}
+{# Bloc titre Page Projets -> Célestine, géante de Rouvroy #}
+<section>
+    <div class="section-titre-page">
+        <h2 class="titre-page">Projets</h2>
+        <h3 class="sous-titre-page">Célestine, géante de Rouvroy</h3>
+    </div> 
+</section> 
+{# Fin Bloc titre Page Projets -> Célestine, géante de Rouvroy #}
+
+{# Bloc section Page Projets -> Célestine, géante de Rouvroy #}
+<section class="celestine">
+    <h2>Célestine, géante de Rouvroy</h2> 
+
+    {% for Celestine in Celestine | sort((a, b) => a.id <=> b.id)%}
+    <div class="article-celestine">
+        <h3>{{ Histoire.titre }}</h3>
+        <div class="part-1">
+        <div class="image-celestine">
+            <img src="uploads/articles/{{Celestine.image}}" alt="" class="img-celestine">
+        </div>
+        <div class="texte-celestine">
+            <p>{{ Celestine.contenu | raw }}</p>
+        </div>
+        </div>
+
+        <div class="part-2">
+        <div class="texte2-celestine">
+            <p>{{ Celestine.contenu2 | raw }}</p>
+        </div>
+        <div class="image-celestine">
+            <img src="uploads/articles/{{Celestine.image2}}" alt="" class="img2-celestine">
+        </div>
+        </div>
+    </div>
+    {% endfor %}
+</section> 
+{# Fin Bloc section Page Projets -> Célestine, géante de Rouvroy #}
+{% endblock %}

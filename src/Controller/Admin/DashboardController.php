@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Archives;
+use App\Entity\Celestine;
 use App\Entity\Histoire;
 use App\Entity\Monographie;
 use App\Entity\PatrimoineCivil;
@@ -68,6 +69,8 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Monographie', 'fa-solid fa-book', Monographie::class);
 
         yield MenuItem::section('Célestine');
+        yield MenuItem::linkToCrud('Célestine, géante de Rouvroy', 'fa-solid fa-person-walking-with-cane', Celestine::class);
+
 
         yield MenuItem::section('Archives');
         yield MenuItem::linkToCrud('Archives', 'fa-solid fa-box-archive', Archives::class);
