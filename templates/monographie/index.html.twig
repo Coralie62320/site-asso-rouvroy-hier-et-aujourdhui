@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Rourvroy d'hier et d'aujourd'hui | Projets | Monographie{% endblock %}
+
+{% block body %}
+{# Bloc titre Page Projets -> Monographie #}
+<section>
+    <div class="section-titre-page">
+        <h2 class="titre-page">Projets</h2>
+        <h3 class="sous-titre-page">Monographie</h3>
+    </div> 
+</section> 
+{# Fin Bloc titre Page Projets -> Monographie #}
+
+{# Bloc section Page Projets -> Monographie #}
+<section class="monographie">
+    <h2>Monographie de Rouvroy</h2> 
+
+    {% for Monographie in Monographie | sort((a, b) => a.id <=> b.id)%}
+    <div class="article-monographie">
+        <h3>{{ Monographie.titre }}</h3>
+        <div class="part-1">
+        <div class="image-monographie">
+            <img src="uploads/articles/{{Monographie.image}}" alt="" class="img-monographie">
+        </div>
+        <div class="texte-monographie">
+            <p>{{ Monographie.contenu | raw }}</p>
+        </div>
+        </div>
+
+        <div class="part-2">
+        <div class="texte2-monographie">
+            <p>{{ Monographie.contenu2 | raw }}</p>
+        </div>
+        <div class="image-monographie">
+            <img src="uploads/articles/{{Monographie.image2}}" alt="" class="img2-monographie">
+        </div>
+        </div>
+    </div>
+    {% endfor %}
+</section> 
+{# Fin Bloc section Page Projets -> Monographie #}
+{% endblock %}
