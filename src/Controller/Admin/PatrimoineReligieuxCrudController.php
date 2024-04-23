@@ -30,8 +30,8 @@ class PatrimoineReligieuxCrudController extends AbstractCrudController
             yield TextEditorField::new('contenu'),
             // yield TextField::new('imageFile')->setFormType(VichImageType::class),
             yield ImageField::new('image')->setBasePath('/uploads/articles')->setUploadDir('/public/uploads/articles'),
-            yield DateTimeField::new('createdAt'),
-            yield DateTimeField::new('updatedAt'),
+            yield DateTimeField::new('createdAt')->hideOnIndex()->hideOnForm(),
+            yield DateTimeField::new('updatedAt')->hideOnIndex()->hideOnForm(),
         ];
     }
 }
