@@ -18,7 +18,7 @@
     <div class="div-archives">
         {% for Archives in Archives | sort((a, b) => a.id <=> b.id)%}
         <div class="card-archives" style="width: 18rem;">
-            <img src="uploads/articles/{{Archives.image}}" class="card-img-top-archives" alt="...">
+            <img src="uploads/articles/{{Archives.image}}" class="card-img-top-archives" alt="{{ Archives.nom }}">
             <div class="card-body-archives">
             <h5 class="card-title-archives">{{ Archives.nom }}</h5>
             <h6 class="card-subtitle-archives mb-2 text-muted">{{ Archives.dates }}</h6>

@@ -20,7 +20,7 @@
     {% for PatrimoineMonuments in PatrimoineMonuments | sort((a, b) => a.id <=> b.id)%}
     <div class="article-patrimoine-monuments">
         <div class="image-patrimoine-monuments">
-            <img src="uploads/articles/{{PatrimoineMonuments.image}}" alt="" class="img-monuments">
+            <img src="uploads/articles/{{PatrimoineMonuments.image}}" alt="{{ PatrimoineMonuments.titre }}" class="img-monuments">
         </div>
         <div class="texte-patrimoine-monuments">
             <h3>{{ PatrimoineMonuments.titre }}</h3>

@@ -20,7 +20,7 @@
     <div class="div-personnages">
         {% for Personnages in Personnages | sort((a, b) => a.id <=> b.id)%}
         <div class="card-personnages" style="width: 18rem;">
-            <img src="uploads/articles/{{Personnages.image}}" class="card-img-top-personnages" alt="...">
+            <img src="uploads/articles/{{Personnages.image}}" class="card-img-top-personnages" alt="{{ Personnages.nom }}">
             <div class="card-body-personnages">
             <h5 class="card-title-personnages">{{ Personnages.nom }}</h5>
             <h6 class="card-subtitle-personnages mb-2 text-muted">{{ Personnages.dates }}</h6>
