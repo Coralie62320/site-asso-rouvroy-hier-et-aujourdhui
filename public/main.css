@@ -421,9 +421,31 @@ input#registration_form_email {
 
 .texte-histoire-rouvroy,
 .texte2-histoire-rouvroy {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: justify;
+}
+
+@media screen and (max-width: 576px) {
+  .histoire h3 {
+    font-size: 16px;
+  }
+
+  .img-histoire-rouvroy,
+  .img2-histoire-rouvroy {
+    height: 150px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .texte-histoire-rouvroy,
+  .texte2-histoire-rouvroy {
+    font-size: 12px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 /* Page Le patrimoine local */
@@ -682,6 +704,24 @@ input#registration_form_email {
   text-align: justify;
 }
 
+.retour-civil-vers-local {
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.retour-civil-vers-local a {
+  text-decoration: none;
+  color: #e1261c;
+  opacity: 0.75;
+}
+
+.retour-civil-vers-local i {
+  margin-right: 0.5rem;
+}
+
 @media screen and (max-width: 576px) {
   .texte-patrimoine-civil h3 {
     font-size: 16px;
@@ -747,6 +787,24 @@ input#registration_form_email {
   padding-right: 1rem;
   line-height: 1.5rem;
   text-align: justify;
+}
+
+.retour-religieux-vers-local {
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.retour-religieux-vers-local a {
+  text-decoration: none;
+  color: #e1261c;
+  opacity: 0.75;
+}
+
+.retour-religieux-vers-local i {
+  margin-right: 0.5rem;
 }
 
 @media screen and (max-width: 576px) {
@@ -816,6 +874,24 @@ input#registration_form_email {
   text-align: justify;
 }
 
+.retour-monuments-vers-local {
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.retour-monuments-vers-local a {
+  text-decoration: none;
+  color: #e1261c;
+  opacity: 0.75;
+}
+
+.retour-monuments-vers-local i {
+  margin-right: 0.5rem;
+}
+
 @media screen and (max-width: 576px) {
   .texte-patrimoine-monuments h3 {
     font-size: 16px;
@@ -881,6 +957,24 @@ input#registration_form_email {
   padding-right: 1rem;
   line-height: 1.5rem;
   text-align: justify;
+}
+
+.retour-disparus-vers-local {
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.retour-disparus-vers-local a {
+  text-decoration: none;
+  color: #e1261c;
+  opacity: 0.75;
+}
+
+.retour-disparus-vers-local i {
+  margin-right: 0.5rem;
 }
 
 @media screen and (max-width: 576px) {

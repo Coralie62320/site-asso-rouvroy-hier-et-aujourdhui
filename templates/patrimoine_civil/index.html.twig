@@ -17,7 +17,7 @@
     <h2>Le patrimoine civil</h2> 
 
     
-    {% for PatrimoineCivil in PatrimoineCivil | sort((a, b) => a.id <=> b.id)%}
+    {% for PatrimoineCivil in PatrimoineCivil | sort((a, b) => a.id <=> b.id) %}
     <div class="article-patrimoine-civil">
         <div class="image-patrimoine-civil">
             <img src="uploads/articles/{{PatrimoineCivil.image}}" alt="" class="img-civil">
@@ -31,4 +31,10 @@
     
 </section> 
 {# Fin Bloc section articles Page Le patrimoine civil #}
+
+{# Bloc lien retour vers la Page Patrimoine Local #}
+<div class="retour-civil-vers-local">
+    <a href="/patrimoine-local"><i class="fa-sharp fa-solid fa-arrow-left"></i>Patrimoine Local</a>
+</div>
+{# Bloc lien retour vers la Page Patrimoine Local #}
 {% endblock %}
