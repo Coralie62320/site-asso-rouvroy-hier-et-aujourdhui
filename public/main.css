@@ -364,6 +364,16 @@ input#registration_form_email {
 
 /* Page Découvrir Rouvroy -> Son Histoire */
 
+.section-titre-page > .titre-page-histoire {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
 .sous-titre-page {
   color: white;
   font-family: "Poppins", sans-serif;
@@ -457,14 +467,14 @@ input#registration_form_email {
   margin-top: 80px;
 }
 
-.section-titre-page > .titre-page {
+.section-titre-page > .titre-page-patrimoine-local {
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 26px;
   display: flex;
   justify-content: center;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .presentation-patrimoine-local {
@@ -653,6 +663,16 @@ input#registration_form_email {
 
 /* Page Découvrir Rouvroy -> Le patrimoine local -> Le patrimoine civil */
 
+.section-titre-page > .titre-page-patrimoine-civil {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
 .sous-titre-page {
   color: white;
   font-family: "Poppins", sans-serif;
@@ -737,6 +757,16 @@ input#registration_form_email {
 }
 
 /* Page Découvrir Rouvroy -> Le patrimoine local -> Le patrimoine religieux */
+
+.section-titre-page > .titre-page-patrimoine-religieux {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
 
 .sous-titre-page {
   color: white;
@@ -823,6 +853,16 @@ input#registration_form_email {
 
 /* Page Découvrir Rouvroy -> Le patrimoine local -> Les monuments */
 
+.section-titre-page > .titre-page-monuments {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
 .sous-titre-page {
   color: white;
   font-family: "Poppins", sans-serif;
@@ -908,6 +948,16 @@ input#registration_form_email {
 
 /* Page Découvrir Rouvroy -> Le patrimoine local -> Le patrimoine disparus */
 
+.section-titre-page > .titre-page-patrimoine-disparus {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
 .sous-titre-page {
   color: white;
   font-family: "Poppins", sans-serif;
@@ -992,6 +1042,16 @@ input#registration_form_email {
 }
 
 /* Page Découvrir Rouvroy -> Les personnages */
+
+.section-titre-page > .titre-page-personnages {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
 
 .sous-titre-page {
   color: white;
@@ -1098,6 +1158,16 @@ input#registration_form_email {
 
 /* Page Projets -> Monographie de Rouvroy */
 
+.section-titre-page > .titre-page-monographie {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
 .sous-titre-page {
   color: white;
   font-family: "Poppins", sans-serif;
@@ -1184,6 +1254,16 @@ input#registration_form_email {
 
 /* Page Projets -> Célestine, géante de Rouvroy */
 
+.section-titre-page > .titre-page-celestine {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
 .sous-titre-page {
   color: white;
   font-family: "Poppins", sans-serif;
@@ -1236,7 +1316,7 @@ input#registration_form_email {
 .part-2 {
   display: flex;
   padding-top: 2rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .texte-celestine,
@@ -1269,6 +1349,16 @@ input#registration_form_email {
 }
 
 /* Page Archives */
+
+.section-titre-page > .titre-page-archives {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
 
 h2.titre-page.titre-archives {
   padding-top: 2rem;
@@ -1357,6 +1447,17 @@ h2.titre-page.titre-archives {
 }
 
 /* Page Contacts */
+
+.section-titre-page > .titre-page-contacts {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
 .coordonnes-contacts {
   display: flex;
   margin-top: 2rem;

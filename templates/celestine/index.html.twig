@@ -6,7 +6,7 @@
 {# Bloc titre Page Projets -> Célestine, géante de Rouvroy #}
 <section>
     <div class="section-titre-page">
-        <h2 class="titre-page">Projets</h2>
+        <h2 class="titre-page-celestine">Projets</h2>
         <h3 class="sous-titre-page">Célestine, géante de Rouvroy</h3>
     </div> 
 </section> 
@@ -18,7 +18,7 @@
 
     {% for Celestine in Celestine | sort((a, b) => a.id <=> b.id)%}
     <div class="article-celestine">
-        <h3>{{ Histoire.titre }}</h3>
+        <h3>{{ Celestine.titre }}</h3>
         <div class="part-1">
         <div class="image-celestine">
             <img src="uploads/articles/{{Celestine.image}}" alt="" class="img-celestine">
