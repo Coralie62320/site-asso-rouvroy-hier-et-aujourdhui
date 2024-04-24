@@ -15,7 +15,7 @@
 {# Bloc section présentation des personnages Page Personnages #}
 <section class="personnages">
     <h2>Les personnages</h2>
-    <p>Présentation de la page Personnages</p>
+    <p><span class="tabulation">La</span> ville de Rouvroy regorge de personnalités qui ont laissé une empreinte indélébile, tant au sein de la communauté locale qu'à l'extérieur. Parmi ces personnalités, on retrouve des soldats ayant combattu lors de différents conflits, des membres du clergé, des figures politiques, d'anciens dignitaires civils, ainsi que d'autres individus qui ont marqué la commune par leurs contributions professionnelles.</p>
 
     <div class="div-personnages">
         {% for Personnages in Personnages | sort((a, b) => a.id <=> b.id)%}

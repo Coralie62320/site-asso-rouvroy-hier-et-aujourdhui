@@ -4,6 +4,7 @@ namespace App\Controller\Admin;
 
 use App\Entity\Archives;
 use App\Entity\Celestine;
+use App\Entity\Galeries;
 use App\Entity\Histoire;
 use App\Entity\Monographie;
 use App\Entity\PatrimoineCivil;
@@ -76,5 +77,6 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Archives', 'fa-solid fa-box-archive', Archives::class);
 
         yield MenuItem::section('Galeries');
+        yield MenuItem::linkToCrud('Galeries', 'fa-solid fa-image', Galeries::class);
     }
 }

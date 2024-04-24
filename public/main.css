@@ -47,7 +47,7 @@ input#registration_form_email {
 
 /* Slide Accueil */
 .slide {
-  max-width: 800px;
+  /* max-width: 800px; */
   max-height: 100vh;
   margin-left: auto;
   margin-right: auto;
@@ -55,7 +55,7 @@ input#registration_form_email {
 
 .carousel-item img {
   /* max-width: 50rem; */
-  max-width: 600px;
+  max-width: 800px;
   max-height: 80vh;
   margin-left: auto;
   margin-right: auto;
@@ -64,6 +64,18 @@ input#registration_form_email {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: lightgray;
+}
+
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.carousel-caption h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 /* Section Présentation association */
@@ -1077,11 +1089,12 @@ input#registration_form_email {
 .personnages p {
   color: black;
   font-family: "Open Sans", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: justify;
 }
 
 .div-personnages {
@@ -1444,6 +1457,29 @@ h2.titre-page.titre-archives {
     margin-left: 7rem;
     margin-right: 7rem;
   }
+}
+
+/* Page Galeries */
+
+.section-titre-page > .titre-page-galeries {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.galeries h2 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Page Contacts */
