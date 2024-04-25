@@ -17,18 +17,7 @@
 
     <p class="paragraphe-presentation-galeries">Texte présentation page Galeries images</p>
 
-    {# <div class="div-galeries">
-        {% for Galeries in Galeries | sort((a, b) => a.id <=> b.id)%}
-            <h5>{{ Galeries.titre }}</h5>
-            <h6>{{ Galeries.dates }}</h6>
-            <p>{{ Galeries.description | raw }}</p>
-            <img src="uploads/articles/{{Galeries.image}}" class="card-img-top-galeries" alt="">
-            <img src="uploads/articles/{{Galeries.image2}}" class="card-img-top-galeries" alt="">
-            <img src="uploads/articles/{{Galeries.image3}}" class="card-img-top-galeries" alt="">
-        {% endfor %}
-    </div> #}
-
-    <div class="div-galeries">
+   <div class="div-galeries">
         {% for Galeries in Galeries | sort((a, b) => a.id <=> b.id)%}
             <div class="timeline">
                 <ul>
