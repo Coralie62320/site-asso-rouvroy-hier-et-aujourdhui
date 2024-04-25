@@ -9,6 +9,7 @@
 //   btnEl.style.setProperty("--yPos", y + "px");
 // });
 
+
 // Page formation div translate left
 function reveal() {
     let reveals = document.querySelectorAll(".reveal");
@@ -45,3 +46,9 @@ function revealDeux() {
 window.addEventListener("scroll", revealDeux);
 
 
+// Lightgallery Page Galeries
+lightGallery(document.getElementById('animated-thumbnials'), {
+  thumbnail:true,
+  animateThumb: false,
+  showThumbByDefault: false
+});

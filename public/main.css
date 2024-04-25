@@ -1517,10 +1517,14 @@ div.reveal {
   margin-left: 2rem;
 }
 
-.reveal > .img-galeries {
-  width: 100px;
+.img-galeries {
+  width: 200px;
   height: 100px;
   margin-left: 1rem;
+}
+
+div#animated-thumbnials a {
+  color: white;
 }
 
 .timeline *,
@@ -1649,6 +1653,7 @@ div.reveal {
   opacity: 1;
 }
 
+/* Media queries Timeline Page Galeries */
 @media screen and (max-width: 768px) {
   .timeline ul li div {
     width: 300px;
@@ -1669,6 +1674,7 @@ div.reveal {
   }
 }
 
+/* Keyframes Page Galeries */
 @keyframes translateLeft {
   0% {
     transform: translateX(-100px);
@@ -1686,6 +1692,8 @@ div.reveal {
     transform: translateX(0);
   }
 }
+
+/* Lightgallery Page Galerie */
 
 /* Page Contacts */
 

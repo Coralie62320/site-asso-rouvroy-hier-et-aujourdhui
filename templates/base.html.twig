@@ -11,12 +11,19 @@
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
             <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+            <link href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/css/lightgallery.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="css/lightgallery.css">
         {% endblock %}
 
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
             {# {% block importmap %}{{ importmap('app') }}{% endblock %} #}
             <script src="../index.js" type="text/javascript" defer></script>
+            <script src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.4.0/dist/js/lightgallery.min.js"></script>
+            <script src="js/lightgallery.min.js"></script>
+            <!-- lightgallery plugins -->
+            <script src="js/lg-thumbnail.min.js"></script>
+            <script src="js/lg-fullscreen.min.js"></script>
         {% endblock %}
     </head>
     <body>
