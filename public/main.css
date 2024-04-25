@@ -1517,10 +1517,13 @@ div.reveal {
   margin-left: 2rem;
 }
 
-.img-galeries {
+img.img-galeries {
   width: 200px;
   height: 100px;
   margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 div#animated-thumbnials a {
@@ -1692,8 +1695,6 @@ div#animated-thumbnials a {
     transform: translateX(0);
   }
 }
-
-/* Lightgallery Page Galerie */
 
 /* Page Contacts */
 

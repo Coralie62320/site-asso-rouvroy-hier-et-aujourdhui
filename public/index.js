@@ -47,6 +47,7 @@ window.addEventListener("scroll", revealDeux);
 
 
 // Lightgallery Page Galeries
+// CDN: http://www.jsdelivr.com/projects/lightgallery.js
 lightGallery(document.getElementById('animated-thumbnials'), {
   thumbnail:true,
   animateThumb: false,
