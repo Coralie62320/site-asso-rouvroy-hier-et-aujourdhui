@@ -15,17 +15,35 @@
 <section class="galeries">
     <h2>Les galeries d'images</h2>
 
+    <p class="paragraphe-presentation-galeries">Texte présentation page Galeries images</p>
+
+    {# <div class="div-galeries">
+        {% for Galeries in Galeries | sort((a, b) => a.id <=> b.id)%}
+            <h5>{{ Galeries.titre }}</h5>
+            <h6>{{ Galeries.dates }}</h6>
+            <p>{{ Galeries.description | raw }}</p>
+            <img src="uploads/articles/{{Galeries.image}}" class="card-img-top-galeries" alt="">
+            <img src="uploads/articles/{{Galeries.image2}}" class="card-img-top-galeries" alt="">
+            <img src="uploads/articles/{{Galeries.image3}}" class="card-img-top-galeries" alt="">
+        {% endfor %}
+    </div> #}
+
     <div class="div-galeries">
         {% for Galeries in Galeries | sort((a, b) => a.id <=> b.id)%}
-        <div class="card-galeries" style="width: 18rem;">
-            <img src="uploads/articles/{{Galeries.image}}" class="card-img-top-galeries" alt="{{ Galeries.titre }}">
-            <div class="card-body-galeries">
-            <h5 class="card-title-galeries">{{ Galeries.titre }}</h5>
-            <h6 class="card-subtitle-galeries mb-2 text-muted">{{ Galeries.dates }}</h6>
-            <p class="card-text-galeries">{{ Galeries.description | raw }}</p>
-            {# <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div> #}
+            <div class="timeline">
+                <ul>
+                  <li>
+                    <div class="reveal">
+                        <time>{{ Galeries.dates }}</time> 
+                        <h3>{{ Galeries.titre }}</h3>
+                        <p>{{ Galeries.description | raw }}</p>
+                        <img src="uploads/articles/{{Galeries.image}}" class="img-galeries" alt="">
+                        <img src="uploads/articles/{{Galeries.image2}}" class="img-galeries" alt="">
+                        <img src="uploads/articles/{{Galeries.image3}}" class="img-galeries" alt="">
+                    </div>
+                  </li>
+                </ul>
+              </div>
         {% endfor %}
     </div>
 </section>
