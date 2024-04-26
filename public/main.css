@@ -456,13 +456,17 @@ span.carousel-control-next-icon {
 }
 
 @media screen and (max-width: 576px) {
+  .section-titre-page > .titre-page-histoire {
+    font-size: 24px;
+  }
+
   .histoire h3 {
     font-size: 16px;
   }
 
   .img-histoire-rouvroy,
   .img2-histoire-rouvroy {
-    height: 150px;
+    height: 100px;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -472,6 +476,20 @@ span.carousel-control-next-icon {
     font-size: 12px;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .histoire h2 {
+    font-size: 22px;
+  }
+
+  .article-histoire-rouvroy {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .part-1,
+  .part-2 {
+    padding-top: 1rem;
   }
 }
 
@@ -495,7 +513,8 @@ span.carousel-control-next-icon {
 }
 
 .presentation-patrimoine-local {
-  height: 20rem;
+  margin-bottom: 3rem;
+  /* height: 20rem; */
   /* border: solid 1px black; */
 }
 
@@ -503,7 +522,7 @@ span.carousel-control-next-icon {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: bold;
-  margin-top: 6rem;
+  margin-top: 4rem;
   text-align: justify;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -652,6 +671,12 @@ span.carousel-control-next-icon {
 }
 
 /* Medias queries page Le patrimoine local */
+@media screen and (max-width: 768px) {
+  .presentation-patrimoine-local p {
+    margin-top: 3rem;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .card-patrimoine-local {
     flex-direction: column;
@@ -764,12 +789,29 @@ span.carousel-control-next-icon {
 }
 
 @media screen and (max-width: 576px) {
+  .section-titre-page > .titre-page-patrimoine-civil {
+    font-size: 24px;
+  }
+
+  h3.sous-titre-page {
+    font-size: 16px;
+  }
+
+  .article-patrimoine-civil {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .texte-patrimoine-civil h3 {
     font-size: 16px;
   }
 
   .texte-patrimoine-civil div {
     font-size: 12px;
+  }
+
+  .img-civil {
+    width: 150px;
   }
 }
 
@@ -859,12 +901,25 @@ span.carousel-control-next-icon {
 }
 
 @media screen and (max-width: 576px) {
+  .section-titre-page > .titre-page-patrimoine-religieux {
+    font-size: 24px;
+  }
+
+  .article-patrimoine-religieux {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .texte-patrimoine-religieux h3 {
     font-size: 16px;
   }
 
   .texte-patrimoine-religieux div {
     font-size: 12px;
+  }
+
+  .img-religieux {
+    width: 150px;
   }
 }
 
@@ -954,12 +1009,25 @@ span.carousel-control-next-icon {
 }
 
 @media screen and (max-width: 576px) {
+  .section-titre-page > .titre-page-patrimoine-monuments {
+    font-size: 24px;
+  }
+
+  .article-patrimoine-monuments {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .texte-patrimoine-monuments h3 {
     font-size: 16px;
   }
 
   .texte-patrimoine-monuments div {
     font-size: 12px;
+  }
+
+  .img-monuments {
+    width: 150px;
   }
 }
 
@@ -1049,12 +1117,25 @@ span.carousel-control-next-icon {
 }
 
 @media screen and (max-width: 576px) {
+  .section-titre-page > .titre-page-patrimoine-disparus {
+    font-size: 24px;
+  }
+
+  .article-patrimoine-disparus {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .texte-patrimoine-disparus h3 {
     font-size: 16px;
   }
 
   .texte-patrimoine-disparus div {
     font-size: 12px;
+  }
+
+  .img-disparus {
+    width: 150px;
   }
 }
 
@@ -1168,9 +1249,23 @@ span.carousel-control-next-icon {
 }
 
 @media screen and (max-width: 576px) {
+  .section-titre-page > .titre-page-personnages {
+    font-size: 24px;
+  }
+
+  .personnages h2 {
+    font-size: 24px;
+  }
+
+  .personnages p {
+    font-size: 16px;
+  }
+
   .card-personnages {
     margin-left: 7rem;
     margin-right: 7rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -1251,13 +1346,26 @@ span.carousel-control-next-icon {
 }
 
 @media screen and (max-width: 576px) {
+  .section-titre-page > .titre-page-monographie {
+    font-size: 24px;
+  }
+
+  .article-monographie {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .monographie h2 {
+    font-size: 24px;
+  }
+
   .monographie h3 {
     font-size: 16px;
   }
 
   .img-monographie,
   .img2-monographie {
-    height: 150px;
+    height: 100px;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -1347,13 +1455,26 @@ span.carousel-control-next-icon {
 }
 
 @media screen and (max-width: 576px) {
+  .section-titre-page > .titre-page-celestine {
+    font-size: 24px;
+  }
+
+  .article-celestine {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .celestine h2 {
+    font-size: 24px;
+  }
+
   .celestine h3 {
     font-size: 16px;
   }
 
   .img-celestine,
   .img2-celestine {
-    height: 150px;
+    height: 100px;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -1390,7 +1511,6 @@ h2.titre-page.titre-archives {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .div-archives {
@@ -1458,6 +1578,23 @@ h2.titre-page.titre-archives {
 }
 
 @media screen and (max-width: 576px) {
+  .section-titre-page > .titre-page-archives {
+    font-size: 24px;
+  }
+
+  .card-archives {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .card-img-top-archives {
+    height: 150px;
+  }
+
+  .archives h2 {
+    font-size: 24px;
+  }
+
   .card-archives {
     margin-left: 7rem;
     margin-right: 7rem;
@@ -1737,7 +1874,7 @@ div#animated-thumbnials a {
   }
 
   .timeline ul li {
-    margin-left: 1rem;
+    margin-left: 3rem;
   }
 
   .timeline ul li div {
