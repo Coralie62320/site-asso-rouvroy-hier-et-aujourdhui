@@ -1964,6 +1964,63 @@ div#animated-thumbnials a {
   }
 }
 
+.formulaire-de-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+.formulaire-de-contact h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.formulaire-de-contact form {
+  width: 50%;
+}
+
+#contact_form div {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact_form div > label {
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#contact_form_Nom,
+#contact_form_Email,
+#contact_form_Sujet {
+  height: 2rem;
+}
+
+#contact_form_Message {
+  height: 10rem;
+  resize: none;
+}
+
+#contact_form_Envoyer {
+  margin-top: 2rem;
+  width: 20%;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  background-color: #e1261c;
+  padding: 0.5rem;
+  border: none;
+}
+
 /* Medias queries page Contacts */
 @media screen and (max-width: 768px) {
   .logo-contacts {
