@@ -32,9 +32,8 @@
         <h3>Formulaire de contact</h3>
         {# {{form(Formulaire)}} #}
 
-
         {{ form_start(Formulaire) }}
-        <div class="my-custom-class-for-errors">
+        <div class="errors">
             {{ form_errors(Formulaire) }}
         </div>
         {{ form_row(Formulaire.Nom) }}
