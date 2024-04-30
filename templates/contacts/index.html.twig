@@ -30,7 +30,19 @@
 
     <div class="formulaire-de-contact">
         <h3>Formulaire de contact</h3>
-        {{form(Formulaire)}}
+        {# {{form(Formulaire)}} #}
+
+
+        {{ form_start(Formulaire) }}
+        <div class="my-custom-class-for-errors">
+            {{ form_errors(Formulaire) }}
+        </div>
+        {{ form_row(Formulaire.Nom) }}
+        {{ form_row(Formulaire.Email) }}
+        {{ form_row(Formulaire.Sujet) }}
+        {{ form_row(Formulaire.Message) }}
+        {{ form_row(Formulaire.Envoyer) }}
+        {{ form_end(Formulaire) }}
     </div>
 </section>
 {# Fin Bloc section Page Contacts #}
