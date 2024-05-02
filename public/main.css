@@ -2097,4 +2097,19 @@ button#contact_form_Envoyer {
     margin-top: 2rem;
     margin-left: 0;
   }
+
+  #contact_form_Nom,
+  #contact_form_Email,
+  #contact_form_Sujet {
+    width: 400px;
+  }
+
+  #contact_form_Message {
+    height: 10rem;
+    width: 400px;
+  }
+
+  button#contact_form_Envoyer {
+    width: 150px;
+  }
 }
