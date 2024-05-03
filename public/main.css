@@ -1649,7 +1649,7 @@ h2.titre-page.titre-archives {
   text-align: justify;
 }
 
-div.reveal {
+.timeline > div.reveal {
   margin-left: 2rem;
 }
 
