@@ -1180,6 +1180,7 @@ span.carousel-control-next-icon {
 .div-personnages {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card-personnages {
@@ -1510,6 +1511,7 @@ h2.titre-page.titre-archives {
 .div-archives {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card-archives {
