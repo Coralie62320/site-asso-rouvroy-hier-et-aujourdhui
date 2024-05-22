@@ -1,20 +1,29 @@
 /* Formulaire S'enregistrer (Register) */
-.formulaire-register {
+.titre-page-register {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+/* .formulaire-register {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
+} */
 
 label.required {
-  margin: 1rem;
   font-family: "Poppins", sans-serif;
 }
 
-input#registration_form_email {
-  margin-left: 2rem;
+.formulaire-register > form > div {
+  margin-bottom: 1rem;
 }
 
 .btn-register {
@@ -23,7 +32,7 @@ input#registration_form_email {
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  margin-left: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* Page accueil */
