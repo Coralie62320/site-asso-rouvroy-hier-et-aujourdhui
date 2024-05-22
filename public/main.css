@@ -35,6 +35,15 @@ label.required {
   margin-bottom: 2rem;
 }
 
+.btn-register:hover {
+  background-color: #e1261c;
+  opacity: 0.75;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
 /* Page accueil */
 /* Section Accueil */
 .section-accueil {
