@@ -2026,6 +2026,10 @@ form div > label {
   display: flex;
 }
 
+.formulaire-de-contact > form > div > label {
+  margin-top: 1rem;
+}
+
 #contact_form_Nom,
 #contact_form_Email,
 #contact_form_Sujet {
