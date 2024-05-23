@@ -43,7 +43,10 @@
 //    /> window.addEventListener("scroll", reveal);
 
 
-// Page formation div translate left
+// Page Patrimoine Local div translate left
+/** 
+ * @description Permet de faire apparaître certaines <div> de la page Patrimoine Local de la droite vers la gauche 
+ */
 function reveal() {
     let reveals = document.querySelectorAll(".reveal");
     
@@ -61,7 +64,10 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-// Page formation div translate right
+// Page Patrimoine Local div translate right
+/** 
+ * @description Permet de faire apparaître certaines <div> de la page Patrimoine Local de la gauche vers la droite 
+*/
 function revealDeux() {
     let revealsDeux = document.querySelectorAll(".reveal-2");
     for (let i = 0; i < revealsDeux.length; i++) {
