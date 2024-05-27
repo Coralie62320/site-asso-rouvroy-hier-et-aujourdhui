@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Metadata\ApiResource;
 use App\Repository\PatrimoineReligieuxRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
@@ -10,6 +11,7 @@ use Symfony\Component\HttpFoundation\File\File;
 
 #[ORM\Entity(repositoryClass: PatrimoineReligieuxRepository::class)]
 #[Vich\Uploadable]
+#[ApiResource()]
 class PatrimoineReligieux
 {
     #[ORM\Id]
